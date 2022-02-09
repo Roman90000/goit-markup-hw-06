@@ -971,27 +971,40 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   display: flex;
+  text-align: center;
+  align-items: center;
 
   color: #757575;
 }
 
-.text-checbox::before {
-  content: "";
+.text-checbox .checkbox-icon {
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 2px solid #2196f3;
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
-.policy-check:checked + .text-checbox::before {
-  border: none;
-  background-image: url(../images/icon-check.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+.checkbox-icon {
+  margin-right: 7px;
 }
 
 .form-field {
   margin-bottom: 30px;
   margin-left: 13px;
+}
+
+.policy-icon {
+  fill: transparent;
+}
+
+.policy-check:checked + .text-checbox .policy-icon {
+  border: none;
+  background-color: #2196f3;
+}
+
+.policy-check:checked + .text-checbox .policy-icon {
+  fill: #ffffff;
 }
