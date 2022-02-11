@@ -981,7 +981,7 @@ body {
   width: 16px;
   height: 15px;
   border-radius: 2px;
-  border: 1px solid #212121;
+  /* border: 1px solid #212121; */
   display: flex;
   text-align: center;
   align-items: center;
@@ -999,6 +999,7 @@ body {
 .policy-icon {
   fill: transparent;
   border-radius: 2px;
+  border: 1px solid #212121;
 }
 
 .policy-check:checked + .text-checbox .policy-icon {
