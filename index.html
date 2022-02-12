@@ -402,19 +402,21 @@
             </ul>
         </div>
         
-        <label class="subscription">Подпишитесь на рассылку
-            <div class="subscription-box">
+        
+        <form class="subscription-box">
+            <label class="subscription">Подпишитесь на рассылку
                 <input type="email" class="subscription-input" name="user-subscription" placeholder="E-mail">
-
-                <button type="submit" class="button-email">Подписаться
-                    <svg class="icon-subscription">
-                        <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                    </svg>
-                </button>
-            </div>
-        </label>
-
-
+            </label>
+        
+            
+            
+            <button type="submit" class="button-email">Подписаться
+                <svg class="icon-subscription">
+                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                </svg>
+            </button>
+        </form>
+        
     </div>
 </footer>
 
@@ -430,9 +432,9 @@
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
         <form action="#">
-            
+
             <label class="input-text">Имя
-            <div class="input-wrap">
+            
                 <input 
                     type="text"
                     class="form-input"
@@ -444,11 +446,12 @@
                     <svg class="input-icon" width="12" height="12">
                         <use href="./images/symbol-defs.svg#icon-Vector"></use>
                     </svg>
-            </div>
-            </label>    
+            
+            </label> 
+
             
             <label class="input-text">Телефон
-            <div class="input-wrap">    
+
                 <input 
                     type="tel"
                     class="form-input"
@@ -459,11 +462,11 @@
                     <svg class="input-icon" width="13" height="13">
                         <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
                     </svg>
-            </div>
+
             </label>
            
             <label class="input-text">Почта
-                <div class="input-wrap">
+
                 <input 
                         type="email"
                         class="form-input"
@@ -474,42 +477,29 @@
                         <svg class="input-icon" width="15" height="12">
                             <use href="./images/symbol-defs.svg#icon-Vector-2"></use>
                         </svg>
-                </div>
+
             </label>
 
             <label class="input-text comment">Комментарий
                 <textarea class="form-text" name="user-text" placeholder="Введите текст"></textarea>
-
-
-                <div class="form-field">
-                    <input type="checkbox" name="policy" class="policy-check visually-hidden" id="checkbox">
-                    <label class="text-checbox" for="checkbox"> 
-                        <span class="checkbox-icon">
-                            <svg class="policy-icon" width="16" height="15" >
-                               <use href="./images/icons.svg#icon-Vector"></use>
-                            </svg>
-                        </span>
-                          Соглашаюсь с рассылкой и принимаю<span class="checbox-text">Условия договора</span>
-                    </label>
-
-                </div>
-                
-                <div class="button-submit">
-                    <button class="modal-button" type="submit">Отправить</button>
-                </div>
             </label>
+
+            <div class="form-field">
+                <input type="checkbox" name="policy" class="policy-check visually-hidden" id="checkbox">
+                <label class="text-checbox" for="checkbox"> 
+                    <span class="checkbox-icon">
+                        <svg class="policy-icon" width="16" height="15" >
+                            <use href="./images/icons.svg#icon-Vector"></use>
+                        </svg>
+                    </span>
+                        Соглашаюсь с рассылкой и принимаю<span class="checbox-text">Условия договора</span>
+                </label>
+            </div>
+        
+                <button class="modal-button" type="submit">Отправить</button>
+
         </form>
     </div>
-
-
-            
-        
-        
-
-
-        
-
-    
 
 </div>
 
